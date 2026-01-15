@@ -66,15 +66,9 @@ export default function Header() {
               <Link to="/practice-areas">
                 <li className="hover:underline">{t('practiceAreas')}</li>
               </Link>
-            </div>
-            <div className="flex flex-row lg:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-lg xs:text-md md:text-xl xl:text-xl mt-3 sm:mt-0">
-              
               <Link to="/contact">
                 <li className="hover:underline">{t('contact')}</li>
               </Link>
-              {/* <li className="hover:underline cursor-pointer flex items-center" onClick={toggleLanguage}>
-                <FaGlobe className="w-6 h-6" />
-              </li> */}
             </div>
           </ul>
         </div>
