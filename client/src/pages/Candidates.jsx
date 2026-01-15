@@ -101,12 +101,14 @@ export default function Candidates() {
       </motion.div>
 
       {/* SECTION: Висш адвокатски съвет */}
-      <motion.div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-3">
-          Висш адвокатски съвет
-        </h2>
-        <div className="h-1 w-32 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto" />
-      </motion.div>
+      {/* SECTION: Висш адвокатски съвет */}
+<motion.div className="text-center mb-12">
+  <h2 className="inline-block px-6 py-2 text-4xl md:text-5xl font-bold text-blue-900 mb-3 rounded-lg bg-blue-100/60">
+    Висш адвокатски съвет
+  </h2>
+  <div className="h-1 w-32 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto mt-3" />
+</motion.div>
+
 
       {/* GRID */}
       <motion.div
