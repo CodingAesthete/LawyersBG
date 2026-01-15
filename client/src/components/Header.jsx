@@ -24,8 +24,8 @@ const styles = `
 export default function Header() {
   const { i18n } = useTranslation();
   const toggleLanguage = () => {
-    const newLanguage = i18n.language === 'bg' ? 'en' : 'bg';
-    i18n.changeLanguage(newLanguage);
+    const newLanguage = i18n.language === 'bg';
+    //i18n.changeLanguage(newLanguage);
   };
   const { t } = useTranslation();
 
@@ -60,7 +60,7 @@ export default function Header() {
               <Link to="/about">
                 <li className="hover:underline">{t('about')}</li>
               </Link>
-              <Link to="/">
+              <Link to="/candidates">
                 <li className="hover:underline">{t('candidates')}</li>
               </Link>
               <Link to="/practice-areas">
@@ -72,9 +72,9 @@ export default function Header() {
               <Link to="/contact">
                 <li className="hover:underline">{t('contact')}</li>
               </Link>
-              <li className="hover:underline cursor-pointer flex items-center" onClick={toggleLanguage}>
+              {/* <li className="hover:underline cursor-pointer flex items-center" onClick={toggleLanguage}>
                 <FaGlobe className="w-6 h-6" />
-              </li>
+              </li> */}
             </div>
           </ul>
         </div>

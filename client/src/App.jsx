@@ -47,7 +47,8 @@ function App() {
             {setMetaTags()}
           </Helmet>
           <Routes>
-            <Route path="/" element={<Candidates />} />
+            <Route path="/" element={<About />} />
+            <Route path="/candidates" element={<Candidates />} />
             <Route path="/practice-areas" element={<PracticeAreas />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
