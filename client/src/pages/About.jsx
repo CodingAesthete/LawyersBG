@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import lawyerImage from "@/assets/images/lawyer1.jpg";
-import svetlozar from "../assets/images/svetlozar.jpg";
+import svetlozar from "../assets/images/svetlio.png";
 
 export default function About() {
   const firstSectionRef = useRef(null);
