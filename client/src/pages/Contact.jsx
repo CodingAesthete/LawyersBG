@@ -71,10 +71,7 @@ export default function Contact() {
         >
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <p className="text-blue-900 text-lg leading-relaxed drop-shadow-md">
-              Висшият адвокатски съвет е органът на адвокатската професия в
-              България, който защитава независимостта на адвокатурата,
-              подпомага развитието на правната система и представлява
-              интересите на адвокатите пред всички органи на власт.
+              Адвокатска колегия Варна е регионален орган на адвокатската професия, който обединява адвокатите от Варненска област, подпомага тяхното професионално развитие, защитава интересите им и осигурява качествена правна помощ за обществото. Колегията работи за утвърждаване на етичните стандарти и независимостта на адвокатурата в региона.
             </p>
           </div>
 
@@ -83,22 +80,17 @@ export default function Contact() {
             <ContactItem
               icon={<FaPhone />}
               label="Телефон"
-              value="+359 2 987 6543"
+              value="0892-055-838"
             />
             <ContactItem
               icon={<FaEnvelope />}
               label="Имейл"
-              value="contact@supremebar.bg"
+              value="svetlozar.nikolov.eu@gmail.com"
             />
             <ContactItem
               icon={<FaMapMarkerAlt />}
               label="Адрес"
-              value="Висш адвокатски съвет, София, България"
-            />
-            <ContactItem
-              icon={<FaClock />}
-              label="Работно време"
-              value="Понеделник – Петък, 09:00 – 18:00"
+              value="гр. Варна 9000, ул. Преслав 46, ет. 2"
             />
           </div>
         </motion.div>
