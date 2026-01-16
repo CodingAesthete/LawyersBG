@@ -1,83 +1,106 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import {
-  FaShieldAlt,
-  FaGraduationCap,
-  FaGavel,
-  FaFileAlt,
-  FaExchangeAlt,
-  FaGlobeAmericas,
-} from "react-icons/fa";
+import { FaGavel, FaUsers, FaHome, FaBookOpen, FaPhoneAlt, FaPenFancy, FaFileContract, FaHandshake, FaGraduationCap, FaSearch } from "react-icons/fa";
 
-export default function PracticeAreas() {
-  const sections = [
+export default function Program() {
+  const programSections = [
     {
-      title: "Създаване на гаранции за независимостта на адвокатурата",
-      items: [
-        {
-          number: "01",
-          title: "Достъп до професията",
-          icon: FaShieldAlt,
-        },
-        {
-          number: "02",
-          title: "Повишаване квалификацията на адвокатите",
-          icon: FaGraduationCap,
-        },
-        {
-          number: "03",
-          title: "Защита на професионалните права на адвокатите",
-          icon: FaGavel,
-        },
-        {
-          number: "04",
-          title: "Водене на електронните единни адвокатски регистри",
-          icon: FaFileAlt,
-        },
-      ],
+      title: "Защита професионалните права, чест и достойнството на адвокатите",
+      icon: FaGavel,
+      text: `
+Адвокатът е приравнен със съдията по отношение на дължимото му уважение и му се дължи съдействие като на съдия /чл. 29 от ЗА/, но към момента липсва реалното прилагане на тази разпоредба.
+Именно поради това приоритетната ни задача ще бъде да организираме изпълнение на задължението на съвета по чл. 89, т. 5 от ЗА, като създадем необходимата организация.
+При сигнал от адвокат за неоказано дължимо уважение и съдействие АС ще реагира незабавно и ще предприема активни действия по защита на адвоката с изготвяне на съответните жалби, работни срещи и публични декларации.
+Ще бъде създадена и специална комисия, която ще подпомага работата на АС по тези въпроси.
+Откриване и поддържане на „горещ” телефон за сигнали при нужда от спешно съдействие и защита на адвокати;
+Извършване на проверки по сигнали срещу съдии, прокурори, полицаи, държавни и общински служители при неоказано дължимо уважение и съдействие на адвокат, като Комисията ще дава предложения за защита на правата на адвокатите;
+Организиране на регулярни срещи с представители на Съд, Прокуратура, Следствие, МВР, Министерство на правосъдието, ЧСИ и други институции за обсъждане и решаване на възникнали проблеми при работата на адвокатите.
+      `,
     },
     {
-      title: "Подобряване на правната среда в страната",
-      items: [
-        {
-          number: "01",
-          title: "Правомощия, свързани със законодателния процес",
-          icon: FaExchangeAlt,
-        },
-        {
-          number: "02",
-          title: "Правомощия, свързани с Върховните съдилища",
-          icon: FaGavel,
-        },
-        {
-          number: "03",
-          title: "Правомощия, свързани с Конституционния съд",
-          icon: FaShieldAlt,
-        },
-      ],
+      title: "Служебните защити и особени представителства",
+      icon: FaUsers,
+      text: `
+Осигуряване на пълна публичност и прозрачност
+Особените представителства ще бъдат разпределяни между всички членове на колегията, които заявят изрично желанието си за това, без значение дали са вписани в НРПП.
+Ще прилагаме публичност, прозрачност и разпределение по безпристрастен начин, съобразно специализацията, натовареността и мястото на услугата при разпределение на делата по ЗПП и особените представителства.
+Ежемесечно публикуване на пълната информация за разпределението им.
+Увеличение на възнагражденията по ЗПП.
+      `,
     },
     {
-      title: "Представителни правомощия и обществени функции",
-      items: [
-        {
-          number: "01",
-          title: "Взаимодействие с органите на съда и прокуратурата",
-          icon: FaGavel,
-        },
-        {
-          number: "02",
-          title:
-            "Взаимодействие с изпълнителната власт и органите на местно самоуправление",
-          icon: FaExchangeAlt,
-        },
-        {
-          number: "03",
-          title:
-            "Взаимодействие с международни адвокатски организации",
-          icon: FaGlobeAmericas,
-        },
-      ],
+      title: "Осигуряване на споделено офис пространство",
+      icon: FaHome,
+      text: `
+Пространството ще включва професионално оборудвани и неутрални помещения за срещи и консултации (кабинети и/или зали), осигуряващи необходимата техника, дискретност и спокойна работна среда.
+Достъпът до споделения офис ще бъде предоставян на всички адвокати от колегията, включително на колеги, които нямат самостоятелна кантора и работят от дома си, като възможността за ползване ще става чрез предварително заявяване и резервиране, при почасов принцип.
+Ползването ще бъде предоставяно безплатно или съфинансирано.
+      `,
+    },
+    {
+      title: "Демократично функциониране на Адвокатския съвет",
+      icon: FaBookOpen,
+      text: `
+Създаване на затворена фейсбук група на ВАК за членовете на колегията с цел пълна информираност, облекчено и достъпно участие на колегите в дейността на Съвета.
+Най-малко една седмица преди заседанието ще бъдат обявявани дата и часът на провеждането на заседанията на Съвета, дневният ред, на сайта и във фейсбук групата.
+Дневният ред на всяко едно заседание ще бъде обявяван подробно, материалите за всеки един въпрос ще бъдат достъпни за запознаване от всеки един адвокат в закритата секция на сайта при съобразяване с GDPR.
+Заседанията ще се провеждат публично за членовете на колегията, с протокол, поименно гласуване и излъчване на живо.
+      `,
+    },
+    {
+      title: "Създаване на правила и прозрачност в работата на Съвета",
+      icon: FaPenFancy,
+      text: `
+Изготвяне на кодекс за поведение на служителите в Съвета, правилник за работата на Съвета и публични процедури за избор на доставчици на стоки/услуги.
+Отмяна на решение за заплащане на такси за разглеждане на дисциплинарни преписки и администриране на жалби.
+      `,
+    },
+    {
+      title: "Участие в дейността на Висшия адвокатски съвет",
+      icon: FaFileContract,
+      text: `
+Председателят на АС има достъп до всички материали и пълния дневен ред за предстоящите заседания на ВАдвС.
+Ще се информира своевременно Съветът за предстоящите заседания и въпросите по дневния ред, за да могат членовете му да изразят становище, което ще бъде защитавано.
+      `,
+    },
+    {
+      title: "Участие в нормативната дейност и сезиране на Конституционния съд",
+      icon: FaHandshake,
+      text: `
+Анализ на съдебната практика, изготвяне на предложения за тълкувателни дела, изготвяне на искания по чл. 150, ал.4 от КРБ и предложения за усъвършенстване на законодателството.
+Изготвяне на проект на нов Закон за адвокатурата в съответствие с КРБ, КЗПЧ, ПЕС, практиката на СЕС и ЕСПЧ.
+      `,
+    },
+    {
+      title: "Дисциплинарна дейност",
+      icon: FaPhoneAlt,
+      text: `
+Съветът няма да образува дисциплинарни производства по недопустими жалби, ще се провеждат медиации и дисциплинарните производства ще спазват принципите на публичност, прозрачност, обоснованост и законност.
+Създаване на електронен портал за дистанционен достъп до дисциплинарните преписки.
+      `,
+    },
+    {
+      title: "Подпомагане на младшите адвокати",
+      icon: FaGraduationCap,
+      text: `
+Разработване на специално обучение по практически теми, консултации и програми за висококвалифицирано навлизане в пазара на адвокатските услуги.
+Предоставяне на безлихвени заеми за развитие на практиката.
+      `,
+    },
+    {
+      title: "Квалификация и обучение",
+      icon: FaBookOpen,
+      text: `
+На всяко тримесечие ще се проучват темите за обучение, ще се осигуряват обучения от висококвалифицирани специалисти, онлайн и офлайн, със звукозапис и материали за всеки записал се адвокат.
+      `,
+    },
+    {
+      title: "Одит на Адвокатската колегия",
+      icon: FaSearch,
+      text: `
+Ще извършим пълна ревизия на дейността на предходните Съвети, ще информираме обществеността за резултатите и ще сезираме компетентните органи при установени правонарушения.
+      `,
     },
   ];
 
@@ -86,120 +109,62 @@ export default function PracticeAreas() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="w-11/12 sm:w-5/6 mx-auto px-4 sm:px-10 py-8 mt-6 header-sm:mt-14 mb-10"
+      className="w-11/12 sm:w-5/6 mx-auto px-4 sm:px-10 py-8 mt-6 mb-10"
     >
       <Helmet>
-        <title>Насоки на дейността</title>
-        <meta
-          name="description"
-          content="Насоки на дейността на Варненска адвокатска колегия"
-        />
-        <meta property="og:title" content="Насоки на дейността" />
-        <meta property="og:type" content="website" />
+        <title>Програма на Адвокатския съвет</title>
       </Helmet>
 
       {/* MAIN TITLE */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="bg-blue-900/40 backdrop-blur-sm rounded-lg p-8 mb-4 border border-white/20"
-      >
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-center text-white drop-shadow-2xl"
-        >
-          НАСОКИ НА ДЕЙНОСТТА НА ВАРНЕНСКА АДВОКАТСКА КОЛЕГИЯ
-        </motion.h1>
-      </motion.div>
+      <motion.h1
+  initial={{ opacity: 0, scale: 0.9, y: -30 }}
+  animate={{ opacity: 1, scale: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeInOut" }}
+  whileHover={{ scale: 1.02 }}
+  className="text-4xl md:text-5xl font-bold text-center text-blue-900 bg-gradient-to-r from-violet-300 to-violet-300 p-6 rounded-lg mb-12 shadow-lg"
+>
+  Програма на Адвокатския съвет
+</motion.h1>
 
-      {/* SUBTITLE */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-12 border border-white/20"
-      >
-        <p className="text-center text-white text-lg font-semibold drop-shadow-lg">
-          Дейностите на Варненска адвокатска колегия са основно в три направления:
-        </p>
-      </motion.div>
 
-      {/* SECTIONS */}
-      {sections.map((section, sectionIndex) => (
-        <motion.div
-          key={sectionIndex}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: sectionIndex * 0.1 }}
-          className="mb-20"
-        >
-          {/* SECTION TITLE */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8 border-l-4 border-amber-500"
-          >
-            <h2 className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
-              {section.title}
-            </h2>
-          </motion.div>
+      {/* PROGRAM CARDS */}
+      {programSections.map((section, index) => {
+  const Icon = section.icon;
+  const iconColors = [
+    "text-red-500",
+    "text-green-500",
+    "text-blue-500",
+    "text-yellow-500",
+    "text-pink-500",
+    "text-indigo-500",
+    "text-purple-500",
+    "text-teal-500",
+    "text-orange-500",
+    "text-cyan-500",
+    "text-fuchsia-500",
+    "text-rose-500",
+  ];
 
-          {/* ITEMS */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {section.items.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -10 }}
-                  className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 shadow-lg hover:shadow-2xl transition border-l-4 border-amber-500"
-                >
-                  <div className="text-5xl font-bold text-blue-600 mb-4 opacity-70">
-                    {item.number}
-                  </div>
+  return (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 50, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, delay: index * 0.1, type: "spring", stiffness: 80 }}
+      whileHover={{ scale: 1.04, y: -8, boxShadow: "0 15px 25px rgba(0,0,0,0.2)" }}
+      className="bg-white rounded-lg shadow-xl p-6 mb-8 border-l-8 border-blue-700 transition-all"
+    >
+      <div className="flex items-center mb-4">
+        <Icon className={`text-3xl mr-3 ${iconColors[index % iconColors.length]}`} />
+        <h2 className="text-xl font-bold text-blue-900">{section.title}</h2>
+      </div>
+      <p className="text-gray-700 whitespace-pre-line">{section.text}</p>
+    </motion.div>
+  );
+})}
 
-                  <div className="text-4xl text-blue-700 mb-4">
-                    <Icon />
-                  </div>
 
-                  <h3 className="text-lg font-bold text-blue-950 leading-tight">
-                    {item.title}
-                  </h3>
-                </motion.div>
-              );
-            })}
-          </div>
-        </motion.div>
-      ))}
-
-      {/* CTA
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="mt-20 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl p-12 text-white text-center"
-      >
-        <h2 className="text-3xl font-bold mb-4">
-          Желаете ли да ни пишете?
-        </h2>
-        <p className="text-lg mb-6 text-blue-100">
-          Ако имате въпроси или препоръки към нас
-        </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-white text-blue-700 px-8 py-3 rounded-lg font-bold text-lg hover:bg-blue-50 transition"
-        >
-          Пишете ни
-        </motion.button>
-      </motion.div> */}
     </motion.div>
   );
 }
