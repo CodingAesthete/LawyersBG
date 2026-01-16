@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import lawyerImage from "@/assets/images/lawyer1.jpg";
 import svetlozar from "../assets/images/svetlio.png";
-import speech from "../assets/images/full-speech.mp4";
 
 export default function About() {
   const firstSectionRef = useRef(null);
