@@ -101,7 +101,7 @@ export default function About() {
             </ul>
           </div>
 
-          <div className="lg:w-1/3 h-72 rounded-lg overflow-hidden shadow-lg">
+          <div className="lg:w-1/3 h-82 rounded-lg overflow-hidden shadow-lg">
             <img src={svetlozar} alt="Светлозар Николов" className="w-full h-full object-cover" />
           </div>
         </div>

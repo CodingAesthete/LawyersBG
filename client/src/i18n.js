@@ -14,7 +14,7 @@ i18n
           firm: "Адвокатско бюро",
           services: "Услуги",
           candidates: "Кандидати",
-          practiceAreas: "Цели и насоки",
+          practiceAreas: "Програма",
           about: "Избори 2026",
           contact: "Контакт",
 
