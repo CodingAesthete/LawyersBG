@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import lawyerImage from "@/assets/images/lawyer1.jpg";
 import svetlozar from "../assets/images/svetlio.png";
+import speech from "../assets/images/full-speech.mp4";
 
 export default function About() {
   const firstSectionRef = useRef(null);
@@ -239,7 +240,6 @@ export default function About() {
         </div>
       </motion.div>
 
-      {/* VIDEO SECTION
       <motion.div
         ref={videoSectionRef}
         initial={{ opacity: 0, y: 50 }}
@@ -251,7 +251,7 @@ export default function About() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/f39hPKFgX-k?si=WUTOcG5dtxHI4jAr"
             title="Представяне"
             frameBorder="0"
             allowFullScreen
@@ -259,10 +259,10 @@ export default function About() {
         </div>
 
         <div className="p-6 text-center">
-          <h3 className="text-2xl font-bold text-blue-900 mb-2">Представяне на дейността</h3>
+          <h3 className="text-2xl font-bold text-blue-900 mb-2">Изявление на адвокат Светлозар Николов</h3>
           <p className="text-gray-700 text-lg">Кратко видео, представящо основните принципи и мисията на адвокатурата.</p>
         </div>
-      </motion.div> */}
+      </motion.div>
     </motion.div>
   );
 }
