@@ -245,7 +245,7 @@ export default function Candidates() {
         ))}
       </motion.div>
 
-      {/* CTA */}
+      {/* CTA
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -259,7 +259,7 @@ export default function Candidates() {
         <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition">
           Контактна форма
         </button>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }

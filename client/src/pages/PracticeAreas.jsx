@@ -92,7 +92,7 @@ export default function PracticeAreas() {
         <title>Насоки на дейността</title>
         <meta
           name="description"
-          content="Насоки на дейността на Висшия адвокатски съвет"
+          content="Насоки на дейността на Варненска адвокатска колегия"
         />
         <meta property="og:title" content="Насоки на дейността" />
         <meta property="og:type" content="website" />
@@ -111,7 +111,7 @@ export default function PracticeAreas() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center text-white drop-shadow-2xl"
         >
-          НАСОКИ НА ДЕЙНОСТТА НА ВИСШИЯ АДВОКАТСКИ СЪВЕТ
+          НАСОКИ НА ДЕЙНОСТТА НА ВАРНЕНСКА АДВОКАТСКА КОЛЕГИЯ
         </motion.h1>
       </motion.div>
 
@@ -123,7 +123,7 @@ export default function PracticeAreas() {
         className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-12 border border-white/20"
       >
         <p className="text-center text-white text-lg font-semibold drop-shadow-lg">
-          Дейностите на Висшия адвокатски съвет са основно в три направления:
+          Дейностите на Варненска адвокатска колегия са основно в три направления:
         </p>
       </motion.div>
 
@@ -179,7 +179,7 @@ export default function PracticeAreas() {
         </motion.div>
       ))}
 
-      {/* CTA */}
+      {/* CTA
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -199,7 +199,7 @@ export default function PracticeAreas() {
         >
           Пишете ни
         </motion.button>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }
