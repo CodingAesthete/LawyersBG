@@ -151,7 +151,7 @@ export default function Program() {
       initial={{ opacity: 0, y: 50, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8, delay: index * 0.1, type: "spring", stiffness: 80 }}
+      transition={{ duration: 0.8, delay: index * 0.025, type: "spring", stiffness: 80 }}
       whileHover={{ scale: 1.04, y: -8, boxShadow: "0 15px 25px rgba(0,0,0,0.2)" }}
       className="bg-white rounded-lg shadow-xl p-6 mb-8 border-l-8 border-blue-700 transition-all"
     >
