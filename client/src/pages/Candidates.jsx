@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet-async";
 
 import svetlozar from "../assets/images/svetphoto.png";
 import ivelina from "../assets/images/ivelina.jpg";
-import diana from "../assets/images/diana.jpg";
-import veliko from "../assets/images/veliko.jpg";
+import diana from "../assets/images/diana.png";
+import veliko from "../assets/images/veliko.png";
 import stefka from "../assets/images/stefka.jpg";
 import vladimir from "../assets/images/vlado.png";
 import angelina from "../assets/images/angelina.png";
