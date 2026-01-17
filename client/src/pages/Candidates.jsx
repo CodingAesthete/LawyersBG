@@ -12,7 +12,7 @@ import angelina from "../assets/images/angelina.png";
 import ganka from "../assets/images/ganka.png";
 import nevena from "../assets/images/nevena.jpg";
 import yordan from "../assets/images/yordan.png";
-import maria from "../assets/images/maria.jpg";
+import maria from "../assets/images/mari.png";
 
 export default function Candidates() {
   const ref = useRef(null);
