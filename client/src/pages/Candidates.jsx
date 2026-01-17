@@ -11,7 +11,7 @@ import vladimir from "../assets/images/vladimir.jpg";
 import angelina from "../assets/images/angelina.png";
 import ganka from "../assets/images/ganka.png";
 import nevena from "../assets/images/nevena.jpg";
-import yordan from "../assets/images/yordan.jpg";
+import yordan from "../assets/images/yordan.png";
 import maria from "../assets/images/maria.jpg";
 
 export default function Candidates() {
