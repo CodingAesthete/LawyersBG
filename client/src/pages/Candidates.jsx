@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
 import svetlozar from "../assets/images/svetphoto.png";
-import ivelina from "../assets/images/ivelina.jpg";
+import ivelina from "../assets/images/iva.png";
 import diana from "../assets/images/diana.png";
 import veliko from "../assets/images/veliko.png";
 import stefka from "../assets/images/stefka.jpg";
