@@ -149,7 +149,7 @@ export default function Program() {
         initial={{ opacity: 0, scale: 0.9, y: -30 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="text-4xl md:text-5xl font-bold text-center text-blue-900 bg-blue-100/70 rounded-xl py-4 p-6 mb-12 shadow-lg"
+        className="text-4xl md:text-4xl font-bold text-center text-blue-900 bg-blue-100/70 rounded-xl py-4 p-6 mb-12 shadow-lg"
       >
         Програма на Адвокатския съвет
       </motion.h1>

@@ -42,7 +42,7 @@ function App() {
     <HelmetProvider>
       <BrowserRouter>
         <Header />
-        <div className="pt-36 extrasmall:pt-52 header-sm:pt-36 sm:pt-40 md:pt-40 header-special:pt-24 lg:pt-40 xl:pt-20" style={{ minHeight: '100vh' }}>
+        <div className="pt-36 extrasmall:pt-32 header-sm:pt-32 sm:pt-32 md:pt-40 header-special:pt-24 lg:pt-40 xl:pt-20" style={{ minHeight: '100vh' }}>
           <Helmet>
             {setMetaTags()}
           </Helmet>

@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <>
       <style>{styles}</style>
-      <header className="bg-blue-900 text-white font-semibold shadow-lg fixed top-0 left-0 right-0 z-50">
+      <header className="bg-blue-900 text-white font-semibold shadow-lg fixed top-0 left-0 right-0 z-50 pb-4 md:pb-0">
         <div className="flex flex-col lg:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-36">
           <Link to="/about">
             <div className="flex items-center gap-3 sm:gap-4 my-1">

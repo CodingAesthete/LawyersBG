@@ -191,7 +191,7 @@ export default function Candidates() {
       </Helmet>
 
       <div className="text-center mb-16 bg-white/40 backdrop-blur-md rounded-2xl border border-white/60 shadow-2xl px-8 py-12">
-        <h1 className="text-5xl font-bold text-blue-900 mb-6">
+        <h1 className="text-4xl font-bold text-blue-900 mb-6">
           Нашите кандидати
         </h1>
         <p className="text-xl text-gray-800 font-semibold">
