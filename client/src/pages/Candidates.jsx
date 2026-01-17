@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
-import svetlozar from "../assets/images/svetlio.png";
+import svetlozar from "../assets/images/svetphoto.png";
 import ivelina from "../assets/images/ivelina.jpg";
 import diana from "../assets/images/diana.jpg";
 import veliko from "../assets/images/veliko.jpg";

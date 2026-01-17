@@ -9,7 +9,7 @@ import {
   FaExchangeAlt,
   FaGlobeAmericas,
 } from "react-icons/fa";
-import svetlozar from "../assets/images/svetlio.png";
+import svetlozar from "../assets/images/svetphoto.png";
 
 export default function About() {
   const firstSectionRef = useRef(null);
