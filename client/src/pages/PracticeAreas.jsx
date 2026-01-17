@@ -121,7 +121,7 @@ export default function Program() {
   animate={{ opacity: 1, scale: 1, y: 0 }}
   transition={{ duration: 1, ease: "easeInOut" }}
   whileHover={{ scale: 1.02 }}
-  className="text-4xl md:text-5xl font-bold text-center text-blue-900 bg-gradient-to-r from-violet-300 to-violet-300 p-6 rounded-lg mb-12 shadow-lg"
+  className="text-4xl md:text-5xl font-bold text-center text-blue-900 bg-gradient-to-r text-center mb-10 bg-blue-100/70 rounded-xl py-4 p-6 rounded-lg mb-12 shadow-lg"
 >
   Програма на Адвокатския съвет
 </motion.h1>
