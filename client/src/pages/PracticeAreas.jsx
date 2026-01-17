@@ -1,9 +1,21 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { FaGavel, FaUsers, FaHome, FaBookOpen, FaPhoneAlt, FaPenFancy, FaFileContract, FaHandshake, FaGraduationCap, FaSearch } from "react-icons/fa";
+import {
+  FaGavel,
+  FaUsers,
+  FaHome,
+  FaBookOpen,
+  FaPhoneAlt,
+  FaFileContract,
+  FaHandshake,
+  FaGraduationCap,
+  FaSearch,
+} from "react-icons/fa";
 
 export default function Program() {
+  const [openIndex, setOpenIndex] = useState(null);
+
   const programSections = [
     {
       title: "Защита професионалните права, чест и достойнството на адвокатите",
@@ -80,7 +92,6 @@ export default function Program() {
 Наблюдение и анализ на законопроектите, внесени в НС и публикувани на Портала за обществени консултации и изготвяне на становища;
 Изготвяне до ВАдвС на предложения за усъвършенстване на законодателството.
 Изготвяне на проект на изцяло нов Закон за адвокатурата в съответствие с КРБ, КЗПЧ, ПЕС, практиката на СЕС и ЕСПЧ
-
       `,
     },
     {
@@ -93,7 +104,6 @@ export default function Program() {
 Медиатори ще бъдат адвокати, завършили обучение за медиация с опит, вписани в списък приет от Съвета.
 Дисциплинарното производство ще бъде провеждано при спазване на принципите на публичност, прозрачност, обоснованост, законност и справедливост, в съответствие с най-високите стандарти за правото на защита на дисциплинарно обвинените адвокати установени в  Правото на ЕС, ХОПЕС, КЗПЧОС и както са тълкувани от СЕС и ЕСПЧ.
 Създаване на електронен портал, осигуряващ дистанционен достъп до дисциплинарните преписки и дела с публична част и част, достъпна за членовете на дисциплинарния съд, обвинители и страни, както и регистър на цялата дисциплинарна практика на ДС на ВАК и Висшия дисциплинарен съд по отделните дисциплинарни нарушения.
-
       `,
     },
     {
@@ -135,56 +145,55 @@ export default function Program() {
         <title>Програма на Адвокатския съвет</title>
       </Helmet>
 
-      {/* MAIN TITLE */}
       <motion.h1
-  initial={{ opacity: 0, scale: 0.9, y: -30 }}
-  animate={{ opacity: 1, scale: 1, y: 0 }}
-  transition={{ duration: 1, ease: "easeInOut" }}
-  whileHover={{ scale: 1.02 }}
-  className="text-4xl md:text-5xl font-bold text-center text-blue-900 bg-gradient-to-r text-center mb-10 bg-blue-100/70 rounded-xl py-4 p-6 rounded-lg mb-12 shadow-lg"
->
-  Програма на Адвокатския съвет
-</motion.h1>
+        initial={{ opacity: 0, scale: 0.9, y: -30 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="text-4xl md:text-5xl font-bold text-center text-blue-900 bg-blue-100/70 rounded-xl py-4 p-6 mb-12 shadow-lg"
+      >
+        Програма на Адвокатския съвет
+      </motion.h1>
 
-
-      {/* PROGRAM CARDS */}
       {programSections.map((section, index) => {
-  const Icon = section.icon;
-  const iconColors = [
-    "text-red-500",
-    "text-green-500",
-    "text-blue-500",
-    "text-yellow-500",
-    "text-pink-500",
-    "text-indigo-500",
-    "text-purple-500",
-    "text-teal-500",
-    "text-orange-500",
-    "text-cyan-500",
-    "text-fuchsia-500",
-    "text-rose-500",
-  ];
+        const Icon = section.icon;
+        const isOpen = openIndex === index;
 
-  return (
-    <motion.div
-      key={index}
-      initial={{ opacity: 0, y: 50, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8, delay: index * 0.025, type: "spring", stiffness: 80 }}
-      whileHover={{ scale: 1.04, y: -8, boxShadow: "0 15px 25px rgba(0,0,0,0.2)" }}
-      className="bg-white rounded-lg shadow-xl p-6 mb-8 border-l-8 border-blue-700 transition-all"
-    >
-      <div className="flex items-center mb-4">
-        <Icon className={`text-3xl mr-3 ${iconColors[index % iconColors.length]}`} />
-        <h2 className="text-xl font-bold text-blue-900">{section.title}</h2>
-      </div>
-      <p className="text-gray-700 whitespace-pre-line">{section.text}</p>
-    </motion.div>
-  );
-})}
+        return (
+          <motion.div
+            key={index}
+            layout
+            onClick={() => setOpenIndex(isOpen ? null : index)}
+            className="bg-white rounded-lg shadow-xl p-6 mb-8 border-l-8 border-blue-700 cursor-pointer"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <Icon className="text-3xl mr-3 text-blue-700" />
+                <h2 className="text-xl font-bold text-blue-900">
+                  {section.title}
+                </h2>
+              </div>
 
+              <motion.span animate={{ rotate: isOpen ? 180 : 0 }}>
+                ▼
+              </motion.span>
+            </div>
 
+            <AnimatePresence>
+              {isOpen && (
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="text-gray-700 whitespace-pre-line mt-4 overflow-hidden"
+                >
+                  {section.text}
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        );
+      })}
     </motion.div>
   );
 }
