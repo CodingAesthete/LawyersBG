@@ -6,7 +6,7 @@ import svetlozar from "../assets/images/svetphoto.png";
 import ivelina from "../assets/images/iva.png";
 import diana from "../assets/images/diana.png";
 import veliko from "../assets/images/veliko.png";
-import stefka from "../assets/images/stefka.jpg";
+import stefka from "../assets/images/stefka.png";
 import vladimir from "../assets/images/vlado.png";
 import angelina from "../assets/images/angelina.png";
 import ganka from "../assets/images/ganka.png";
