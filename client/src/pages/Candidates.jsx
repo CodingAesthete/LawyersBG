@@ -67,8 +67,7 @@ export default function Candidates() {
       id: 5,
       name: "адв. Стефка Петкова Кючукова",
       position: "Кандидат за член на Адвокатския съвет",
-      specialization:
-        "Гражданско, административно и наказателно право",
+      specialization: "Гражданско, административно и наказателно право",
       college: "Адвокатска колегия Варна",
       image: stefka,
       bio: "Адвокат с 14-годишен професионален стаж. Специализира в областта на гражданското, административното и наказателното право. Владее английски и италиански език. Била е делегат на Общото събрание на адвокатите от страната за 2024 г. Учредител е на Съюза на българските адвокати. До момента не е участвала в органите за управление на адвокатурата.",
@@ -99,8 +98,7 @@ export default function Candidates() {
       id: 8,
       name: "адв. Ганка Андонова Йост",
       position: "Кандидат за член на Адвокатския съвет",
-      specialization:
-        "Административно право, обществени поръчки",
+      specialization: "Административно право, обществени поръчки",
       college: "Адвокатска колегия Варна",
       image: ganka,
       bio: "Адвокат с 17-годишен професионален стаж. Специализира в областта на административното право и при възлагането на обществени поръчки. Била е началник на отдел „Обществени поръчки и правно обслужване“ в Общинска администрация Ветрино. До момента не е участвала в органите за управление на адвокатурата.",
@@ -110,8 +108,7 @@ export default function Candidates() {
       id: 9,
       name: "адв. Невена Кирилова Стефанова",
       position: "Кандидат за член на Адвокатския съвет",
-      specialization:
-        "Вещно право, административно-наказателно право",
+      specialization: "Вещно право, административно-наказателно право",
       college: "Адвокатска колегия Варна",
       image: nevena,
       bio: "Адвокат с 26-годишен професионален стаж. Специализира в областта на вещното, административното и административно-наказателното право. До момента не е участвала в органите за управление на адвокатурата.",
@@ -139,19 +136,20 @@ export default function Candidates() {
     },
   ];
 
-  const Card = ({ c, imageHeight = "h-96", grow = false }) => (
+  // 🔹 ПРОМЯНА 1: добавен prop `bright`
+  const Card = ({ c, imageHeight = "h-96", grow = false, bright = false }) => (
     <motion.div
       whileHover={{ y: -8 }}
-      className={`bg-white rounded-2xl shadow-lg hover:shadow-2xl transition border-b-4 border-blue-900 h-auto ${
+      className={`bg-white rounded-2xl shadow-lg hover:shadow-2xl transition border-b-4 border-blue-900 ${
         grow ? "min-h-[620px]" : ""
       }`}
     >
-      {/* Image */}
       <div className={`relative ${imageHeight} overflow-hidden`}>
         <img
           src={c.image}
           alt={c.name}
-          className="w-full h-full object-cover object-top"
+          className={`w-full h-full object-cover object-top
+            ${bright ? "brightness-110 contrast-15 saturate-105" : ""}`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
         <div className="absolute top-4 right-4 bg-blue-900 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">
@@ -162,7 +160,6 @@ export default function Candidates() {
         </div>
       </div>
 
-      {/* Text – вече НЕ се реже */}
       <div className="p-5">
         <h3 className="text-lg font-bold text-blue-900 mb-2">{c.name}</h3>
         <p className="text-xs font-semibold text-blue-950 mb-2">
@@ -193,7 +190,6 @@ export default function Candidates() {
         <title>Кандидати</title>
       </Helmet>
 
-      {/* HEADER */}
       <div className="text-center mb-16 bg-white/40 backdrop-blur-md rounded-2xl border border-white/60 shadow-2xl px-8 py-12">
         <h1 className="text-5xl font-bold text-blue-900 mb-6">
           Нашите кандидати
@@ -203,7 +199,6 @@ export default function Candidates() {
         </p>
       </div>
 
-      {/* Председател */}
       <div className="text-center mb-10 bg-blue-100/70 rounded-xl py-4">
         <h3 className="text-2xl font-bold text-blue-900">
           За председател на Адвокатска колегия Варна
@@ -216,16 +211,16 @@ export default function Candidates() {
         <div />
       </div>
 
-      {/* Членове */}
       <div className="text-center mb-10 bg-blue-50/70 rounded-xl py-4">
         <h3 className="text-2xl font-bold text-blue-900">
           Кандидати за членове на Адвокатска колегия
         </h3>
       </div>
 
+      {/* 🔹 ПРОМЯНА 2: bright само за първите 3 */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {members.map((c) => (
-          <Card key={c.id} c={c} grow />
+        {members.map((c, index) => (
+          <Card key={c.id} c={c} grow bright={index < 12} />
         ))}
       </div>
     </motion.div>
