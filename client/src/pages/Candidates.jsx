@@ -146,11 +146,11 @@ export default function Candidates() {
     >
       <div className={`relative ${imageHeight} overflow-hidden`}>
         <img
-          src={c.image}
-          alt={c.name}
-          className={`w-full h-full object-cover object-top
-            ${bright ? "brightness-110 contrast-15 saturate-105" : ""}`}
-        />
+  src={c.image}
+  alt={c.name}
+  className="w-full h-full object-cover object-top"
+  style={{ filter: bright ? "brightness(1.25) contrast(1.1) saturate(1.05)" : "none" }}
+/>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
         <div className="absolute top-4 right-4 bg-blue-900 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">
           {c.badge}
