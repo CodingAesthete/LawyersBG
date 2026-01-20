@@ -65,28 +65,41 @@ export default function About() {
 
       {/* VIDEO SECTION */}
       <motion.div
-        ref={videoSectionRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={videoSectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="bg-white shadow-lg rounded-lg overflow-hidden max-w-2xl mx-auto border-l-4 border-blue-900"
-      >
-        <div className="aspect-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/f39hPKFgX-k"
-            title="Изявление на адвокат Светлозар Николов"
-            allowFullScreen
-          ></iframe>
-        </div>
+  ref={videoSectionRef}
+  initial={{ opacity: 0, y: 50 }}
+  animate={videoSectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="bg-white shadow-lg rounded-lg overflow-hidden max-w-2xl mx-auto border-l-4 border-blue-900"
+>
+  <div
+    style={{
+      position: "relative",
+      paddingTop: "56.25%",
+    }}
+  >
+    <iframe
+      src="https://player.vimeo.com/video/1156641318"
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+      }}
+      frameBorder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowFullScreen
+      title="Изявление на адвокат Светлозар Николов"
+    />
+  </div>
 
-        <div className="p-6 text-center">
-          <h3 className="text-2xl font-bold text-blue-900">
-            Изявление на адвокат Светлозар Николов
-          </h3>
-        </div>
-      </motion.div>
+  <div className="p-6 text-center">
+    <h3 className="text-2xl font-bold text-blue-900">
+      Изявление на адвокат Светлозар Николов
+    </h3>
+  </div>
+</motion.div>
+
     </motion.div>
   );
 }
