@@ -8,7 +8,7 @@ import diana from "../assets/images/diana.png";
 import veliko from "../assets/images/veliko.png";
 import stefka from "../assets/images/stefka.png";
 import vladimir from "../assets/images/vlado.png";
-import angelina from "../assets/images/angelina.jpg";
+import angelina from "../assets/images/angela.png";
 import ganka from "../assets/images/ganka.png";
 import nevena from "../assets/images/nevena.jpg";
 import yordan from "../assets/images/yordan.png";
